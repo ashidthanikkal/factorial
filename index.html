@@ -18,12 +18,19 @@
 </body>
 <script>
     function nFactorial(){
-        var num=Number(n.value)
+      var num=Number(n.value);
+      if(num){
         fact=1
         for(i=1;i<=num;i++){
             fact=fact*i
         }
       alert(`${num} factorial = ${fact} ` )
     }
+    else{
+    alert(`Enter a valid number`)
+  }
+  }
+  
+  
 </script>
 </html>
